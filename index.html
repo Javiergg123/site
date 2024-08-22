@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos necesarios -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace a la hoja de estilo de Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Título de la página -->
+    <title>Portfolio</title>
+
+    <!-- Enlace a la hoja de estilos personalizada -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Contenedor del encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <!-- Logo del sitio -->
+            <div class="logo">
+                <a href="#">Javier Gonzalez</a>
+            </div>
+            <!-- Menú de navegación -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Herramientas</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <!-- Botón de menú para dispositivos móviles -->
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCIÓN INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/numero4.webp" alt="">
+            </div>
+            <h1>Javier</h1>
+            <h2>TSU desarrollador</h2>
+            <div class="redes">
+                <!-- Redes sociales -->
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Javier González.</span> tengo 21 años de edad actualmente soy egersado de la Universidad tecnologica de Nezahualcoyolt como Tecnico Superior Universitario en desarrollo de software Multiplataforma (TSU) y actualmente estudio la ingenieria en la misma institucion.</p>
+
+            <div class="fila">
+                <!-- Columna de datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            12-10-2002
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            5536991480
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            javierpavogg1234@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                           Nezahualcoyolt, estado de Mexico 
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Programador Jr</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna de intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <!-- Cada interés está representado por un icono y una etiqueta -->
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-js"></i>
+                            <span>Programar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Botón para descargar el CV -->
+            <a href="ruta/a/tu/archivo.pdf" download="Nombre_Deseado.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN HERRAMIENTAS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Herramientas</h2>
+            <div class="fila">
+                <!-- Habilidades técnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <!-- Cada habilidad tiene una barra de progreso que muestra el porcentaje de dominio -->
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MYSQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Puntualidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <!-- Columna de educación -->
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnico bachiller en soporte y mantenimiento en equipos de computo</h4>
+                        <span class="casa">Conalep Venustiano Carranza II</span>
+                        <span class="fecha">2017 - 2021</span>
+                        <p>Aprendi hacer mantenimiento a diferentes equipos de computo, aprendi las partes de una PC, aqui empezo mi gusto por la programacion ya que vi un poco de C++ Y HTML</p>
+                    </div>
+                    <div class="item izq">
+                        <h4>TSU en desarrollo de software </h4>
+                        <span class="casa">Universidad Tecnológica De nezahualcóyotl </span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>aqui es donde realmente empeza a programar y ver que realmente esto es lo que me gusta, vi un mundo difente y varias herramientas de desarrollo como: HTML5, PHP, CCS, JAVA, JAVASCRIPT, DART, MYSQL entre otras .</p>
+                    </div>
+                </div>
+
+                <!-- Columna de experiencia laboral -->
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">Servcomp de México S.A. de C.V.</span>
+                        <span class="fecha">2024 - 2024</span>
+                        <p>Realice mis practicas profesionales donde desarrolle un sistema de inventario agil para tener un mayor control de stock y la ubicacion de cada cosa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PORTAFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <!-- Contenedor de proyectos -->
+            <div class="contenedor-proyectos">
+                <div class="proyecto">
+                     <h3>Proyecto 1</h3>
+                    <div class="imagenes">
+                    <img src="img/serv1.png" alt="Proyecto 1">
+                       <img src="img/serv2.png" alt="Proyecto 1">
+                           <img src="img/serv2.png" alt="Proyecto 1">
+                        </div>
+                    <div class="overlay">
+                        <p>Sistema de inventario para Servcomp de México S.A. de C.V..</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <h3>Proyecto 2</h3>
+                    <img src="img/imagen.webp" alt="Proyecto 2"> 
+                 
+                    <div class="overlay">
+                        
+                        <p>.</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="proyecto">
+                     <h3>Proyecto 3</h3>
+                    <img src="img/imagen.jpg" alt="Proyecto 3">
+                    <div class="overlay">
+                       
+                        <p>.</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                
+                <!-- Sección para agregar videos -->
+                <div class="proyecto">
+                     <h3>Proyecto 4</h3>
+                <div class="video-proyecto">
+                    <video width="100" height="56" controls>
+                        <source src="videos/milotrap.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de videos.
+                    </video>
+                    </div>
+                    <div class="overlay">
+
+                        <p>ejemplo de descripcion</p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!--agregar mas videos aqui abajo -->
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Información de contacto -->
+                <div class="col">
+                    <div class="caja">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="texto">
+                            <h4>Ubicación</h4>
+                            <p>Dirección Física: Nezahualcoyotl estado de Mexico</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="caja">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="texto">
+                            <h4>Email</h4>
+                            <p>Javierpavogg1234@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="caja">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="texto">
+                            <h4>Teléfono</h4>
+                            <p>+52 5536991480</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+    </section>
+
+    <!-- Enlace al script de filtrado del portafolio -->
+    <script src="script.js"></script>
+</body>
+
+</html>
