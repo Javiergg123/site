@@ -5,6 +5,7 @@
     font-family: 'Work Sans';
     margin: 0;
     padding: 0;
+    background-color: #1e2326;
 }
 html{
     /* me permite deslizar cuando hago clic en los links del menu */
@@ -186,7 +187,7 @@ html{
 .sobremi button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid #252A2E;
     width: fit-content;
     display: block;
     margin: 20px auto;
