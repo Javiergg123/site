@@ -330,6 +330,7 @@ html {
 @keyframes comunicacion { 0% { width: 0%; } 100% { width: 80%; } }
 
 /* SECCION PROYECTOS */
+/* SECCION PROYECTOS */
 .proyectos {
     background-color: #1e2326;
     color: #fff;
@@ -356,14 +357,15 @@ html {
 }
 
 .proyectos .galeria .proyecto {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 elementos por fila con espacio entre ellos */
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
 }
 
 .proyectos .galeria .proyecto img, 
 .proyectos .galeria .proyecto video {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     transition: transform 0.3s;
 }
@@ -372,6 +374,28 @@ html {
 .proyectos .galeria .proyecto video:hover {
     transform: scale(1.05);
 }
+
+/* Responsive Design for Gallery */
+@media (max-width: 1024px) {
+    .proyectos .galeria .proyecto {
+        flex: 1 1 calc(50% - 20px); /* 2 elementos por fila en pantallas más pequeñas */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .proyectos .galeria .proyecto {
+        flex: 1 1 100%; /* 1 elemento por fila en pantallas pequeñas */
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .proyectos h2 {
+        font-size: 36px;
+    }
+}
+
 
 /* SECCION CONTACTO */
 .contacto {
